@@ -61,3 +61,20 @@ body{
     height: auto;
   }
   
+  @media screen and (max-width: 768px){
+    .about{
+        padding: 50px 0;
+        font-size: 16px;
+    }
+    .about h2{
+        font-size: 2rem;
+    }
+    .about p{
+        font-size: 16px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+  }

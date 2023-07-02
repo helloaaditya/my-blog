@@ -51,7 +51,7 @@ nav {
   
   /* style.css */
 
-.recent-blog {
+#recent-blog {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -131,19 +131,65 @@ nav {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 768px) {
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3a658b;
+  }
 
-/* For screens smaller than 768px (typical mobile devices) */
-@media (max-width: 767px) {
-  .recent-blog {
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3a658b;
+    padding: 15px;
+  }
+  
+  .logo img {
+    display: block;
+    border-radius: 100px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+  }
+  
+  
+  .menu li:first-child {
+    margin-left: 12px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .menu li a:hover {
+    color: #ff6b6b;
+  }
+
+  #recent-blog{
+    width: 80%;
+    background-color: #ffffff;
+    margin-left: 10%;
+    margin-top: 2rem;
+  }
+
+  #recent-blog .blog{
     width: 100%;
+    background-color: #e7e7e7;
+    padding: 20px;
+    margin: 10px;
+    border:solid 2px rgb(169, 169, 169);
   }
-}
 
-/* For screens smaller than 480px (smaller mobile devices) */
-@media (max-width: 479px) {
-  .blog {
-    width: 100%; /* Occupy the full width of the screen */
-  }
 }
 
 
