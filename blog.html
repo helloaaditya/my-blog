@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All-blogs</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+  <header>
+    <script src="index.js"></script>
+    <nav>
+      <div class="logo">
+        <img src="pic.png" alt="Logo"
+          height="50px" width="50px">
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <div class="filters">
+      <div class="filter-bar">
+        <select id="category-filter">
+          <option value="all">All</option>
+          <option value="Architecture">Architecture</option>
+          <option value="Containers">Containers</option>
+          <option value="Database">Database</option>
+          <option value="DevOps">DevOps</option>
+          <option value="Docker">Docker</option>
+          <option value="Kubernetes">Kubernetes</option>
+          <option value="Microservices">Microservices</option>
+          <option value="Networking">Networking</option>
+          <option value="Security">Security</option>
+          <option value="Storage">Storage</option>
+          <option value="Virtualization">Virtualization</option>
+          <option value="Serverless">Serverless</option>
+        </select>
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+        <button id="searchButton">Search</button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="all-blogs">
+      <div class="blog" data-category="Architecture">
+        <div class="blog-img">
+          <img src="https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2022/09/27/figure1-architecture-diagram-1-1024x555.png"
+              alt="Blog Image">
+      </div>
+      <div class="blog-content">
+          <h3>Adding approval notifications to EC2 Image Builder before sharing AMIs</h3>
+             <P>In this post, we explain how to enable approval notifications for an Image Builder pipeline before AMIs are shared to other accounts.
+
+              This solution can be extended to share to more than one AWS account or even to an AWS organization. With this solution, you will be notified when new golden images are created, allowing you to verify the accuracy of their configuration before sharing them to for wider use.
+              
+              This reduces the possibility of sharing AMIs with misconfigurations that the written tests may not have identified.</p>
+          <a href="https://aws.amazon.com/blogs/compute/adding-approval-notifications-to-ec2-image-builder-before-sharing-amis-2/?trk=global_employee_advocacy&sc_channel=sm&advocacy_source=everyonesocial&es_id=46f4cc467e" class="read-more">Read More</a>
+          <h5>#Architecture</h5>
+      </div>
+  </div>
+      <div class="blog" data-category="Architecture">
+        <div class="blog-img">
+          <img src="https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2023/06/12/ec2-instance-connect-endpoint.drawio-1.png"
+              alt="Blog Image">
+      </div>
+      <div class="blog-content">
+          <h3>Secure Connectivity from Public to Private: Introducing EC2 Instance Connect Endpoint</h3>
+          <p>We launched Amazon EC2 Instance Connect (EIC) Endpoint, a new feature that allows you to connect securely to your instances and other VPC resources from the Internet. With EIC Endpoint, you no longer need an IGW in your VPC, a public IP address on your resource, a bastion host, or any agent to connect to your resources. EIC Endpoint combines identity-based and network-based access controls, providing the isolation, control, and logging needed to meet your organization’s security requirements.</p>
+          <a href="https://aws.amazon.com/blogs/compute/secure-connectivity-from-public-to-private-introducing-ec2-instance-connect-endpoint-june-13-2023/" class="read-more">Read More</a>
+          <h5>#Architecture</h5>
+      </div>
+      </div>
+      <div class="blog" data-category="Architecture">
+        <div class="blog-img">
+          <img src="https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2022/07/25/img4.jpg"
+              alt="Blog Image">
+      </div>
+      <div class="blog-content">
+          <h3>Scale your workforce access management with AWS IAM Identity Center (previously known as AWS SSO)</h3>
+          <p>AWS Single Sign-On (AWS SSO) is now AWS IAM Identity Center.
+
+              Amazon Web Services (AWS) is changing the name to highlight the service’s foundation in AWS Identity and Access Management (IAM), to better reflect its full set of capabilities, and to reinforce its recommended role as the central place to manage access across AWS accounts and applications.
+              
+              Although the technical capabilities of the service haven’t changed with this announcement, we want to take the opportunity to walk through some of the important features that drive our recommendation to consider IAM Identity Center your front door into AWS.</p>
+          <a href="https://aws.amazon.com/blogs/security/scale-your-workforce-access-management-with-aws-iam-identity-center-previously-known-as-aws-sso/?trk=global_employee_advocacy&sc_channel=sm&advocacy_source=everyonesocial&es_id=bde2696a29" class="read-more">Read More</a>
+          <h5>#Architecture</h5>
+      </div>
+      </div>
+      <div class="blog" data-category="Architecture">
+        <div class="blog-img">
+          <img src="https://d2908q01vomqb2.cloudfront.net/972a67c48192728a34979d9a35164c1295401b71/2022/10/05/devops_1616_1-1.png"
+              alt="Blog Image">
+      </div>
+      <div class="blog-content">
+          <h3>How to use AWS Config and CloudTrail to find who made changes to a resource</h3>
+          <p>In this blog post, we propose a sample solution to strengthen your detection and response to the root cause of the AWS Config resource Configuration Item (CI) change.
+
+              Through the sample solution, you will learn how to programmatically lookup events related to CI changes in AWS CloudTrail, extract information such as the user principal who made the change from the event, and send the information to an AWS SNS topic as a remedation.</p>
+          <a href="https://aws.amazon.com/blogs/mt/how-to-use-aws-config-and-cloudtrail-to-find-who-made-changes-to-a-resource/?trk=global_employee_advocacy&sc_channel=sm&advocacy_source=everyonesocial&es_id=a6ec701915" class="read-more">Read More</a>
+          <h5>#Architecture</h5>
+      </div>
+      </div>
+      <div class="blog" data-category="Serverless">
+        <div class="blog-img">
+          <img src="https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2022/04/08/CloudFrontLambdaURL-Architecture.png" alt="Blog Image">
+        </div>
+        <div class="blog-content">
+          <h3>Using Amazon CloudFront with AWS Lambda as origin to accelerate your web applications</h3>
+          <p>In this blog, you will learn how to use the Lambda Function URL feature to define a AWS Lambda Function as origin for Amazon CloudFront. Lambda Function URL capability provides a dedicated HTTPS endpoint for your Lambda function deployed in an AWS Region.</p>
+          <a href="#" class="read-more">Read More</a>
+          <h5>#Serverless</h5>
+        </div>
+      </div>
+      <div class="blog" data-category="Serverless">
+        <div class="blog-img">
+          <img src="https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2022/05/25/cost4-1024x462.png" alt="Blog Image">
+        </div>
+        <div class="blog-content">
+          <h3>Optimizing your AWS Lambda costs</h3>
+          <p>This blog post explains how Lambda pricing works and how right-sizing applications and tuning them for performance efficiency offers a more cost-efficient utilization model. The results can also reduce latency, creating a better experience for your end users.</p>
+          <a href="https://aws.amazon.com/blogs/compute/optimizing-your-aws-lambda-costs-part-1/?trk=global_employee_advocacy&sc_channel=sm&advocacy_source=everyonesocial&es_id=fd6f49fdcd" class="read-more">Read More</a>
+          <h5>#Serverless</h5>
+        </div>
+        </div>
+        <div class="blog" data-category="Serverless, Architecture">
+          <div class="blog-img">
+            <img src="https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2022/07/15/CF-S3-active-active-geo-proximity-architecture-1024x636.png" alt="Blog Image">
+          </div>
+          <div class="blog-content">
+            <h3>Using Amazon CloudFront and Amazon S3 to build multi-Region active-active geo proximity applications</h3>
+            <p>In this post, you’ll learn how to use Lambda@Edge to implement geo-proximity routing for delivering assets from an Amazon S3 origin that is closest to the end-user in your Amazon CloudFront distribution, and that has active-active Amazon S3 origins in different AWS Regions.</p>
+            <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/using-amazon-cloudfront-and-amazon-s3-to-build-multi-region-active-active-geo-proximity-applications/?trk=global_employee_advocacy&sc_channel=sm&advocacy_source=everyonesocial&es_id=dc4f4a2189" class="read-more">Read More</a>
+            <h5>#Serverless</h5> <h5>#Architecture</h5>
+          </div>
+          </div>
+          <div class="blog" data-category="Serverless, Security">
+          <div class="blog-img">
+            <img src="https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2022/08/30/img1-7-1024x695.png" alt="Blog Image">
+          </div>
+          <div class="blog-content">
+            <h3>Implement step-up authentication with Amazon Cognito, Part 1: Solution overview</h3>
+            <p>In this blog post, you’ll learn how to protect privileged business transactions that are exposed as APIs by using multi-factor authentication (MFA) or security challenges.
+
+              These challenges have two components: what you know (such as passwords), and what you have (such as a one-time password token).
+              
+              By using these multi-factor security controls, you can implement step-up authentication to obtain a higher level of security when you perform critical transactions.
+              
+              In this post, we show you how you can use AWS services such as Amazon API Gateway, Amazon Cognito, Amazon DynamoDB, and AWS Lambda functions to implement step-up authentication by using a simple rule-based security model for your API resources.</p>
+            <a href="https://aws.amazon.com/pt/blogs/security/implement-step-up-authentication-with-amazon-cognito-part-1-solution-overview/?trk=global_employee_advocacy&sc_channel=sm&advocacy_source=everyonesocial&es_id=f99cfc20fe" class="read-more">Read More</a>
+            <h5>#Security</h5>
+          </div>
+    </div>
+  </section>
+
+</body>
+</html>

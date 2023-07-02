@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="resources.css">
+</head>
+
+<body>
+  <script src="index.js"></script>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="pic.png" alt="Logo"
+          height="50px" width="50px">
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="qa-container">
+    <div class="question">
+      <h3>What is AWS?</h3>
+      <i class="fa fa-angle-down"></i>
+    </div>
+    <div class="answer">
+      <p>AWS stands for Amazon Web Services. It is a comprehensive and widely-used cloud platform provided by Amazon. In
+        simple terms, AWS offers a wide range of services and tools that allow individuals and businesses to access
+        computing resources over the internet.
+
+        Instead of building and maintaining physical servers and infrastructure, AWS enables you to store data, run
+        applications, and perform various computing tasks in the cloud. The services provided by AWS include storage,
+        compute power, databases, networking, analytics, machine learning, and much more.
+</p>
+        <h5>For more details please visit: <a href="https://aws.amazon.com/what-is-aws/">https://aws.amazon.com/what-is-aws/</a></h5>
+    </div>
+  </div>
+  <div class="qa-container">
+    <div class="question">
+      <h3>AWS Global Infrasturcture2</h3>
+      <i class="fa fa-angle-down"></i>
+    </div>
+    <div class="answer">
+      <p>The AWS global infrastructure refers to the vast network of data centers and infrastructure that Amazon Web
+        Services (AWS) operates worldwide. It is a distributed and highly redundant infrastructure designed to provide
+        customers with scalable and reliable cloud computing services.
+
+        The AWS global infrastructure consists of regions, availability zones, edge locations, and various supporting
+        services:
+
+        Regions: AWS has multiple geographic regions globally, each consisting of multiple data centers located in
+        separate geographic areas. These regions are physically isolated from one another to provide fault tolerance and
+        minimize the impact of localized disruptions.
+        Availability Zones: Within each region, AWS has multiple availability zones (AZs). An availability zone is a
+        data center or cluster of data centers that are isolated from one another to provide independent power, cooling,
+        and networking infrastructure. AZs are designed to be highly resilient, ensuring high availability and fault
+        tolerance for applications.
+        Edge Locations: AWS has a network of edge locations strategically placed in various cities around the world.
+        These edge locations serve as points of presence for Amazon CloudFront (a content delivery network service) and
+        Amazon Route 53 (a scalable domain name system service). Edge locations help deliver content and services to
+        end-users with low latency and high data transfer speeds.
+        Supporting Services: AWS provides additional supporting services, such as Amazon Direct Connect, which allows
+        customers to establish private network connections between their on-premises infrastructure and AWS. There are
+        also services like AWS Global Accelerator and AWS Transit Gateway that help optimize network performance and
+        connectivity across regions.
+
+        The AWS global infrastructure allows customers to deploy their applications and services in the region of their
+        choice, providing low-latency access to end-users and enabling compliance with data sovereignty and residency
+        requirements. The distributed nature of the infrastructure ensures high availability, scalability, and fault
+        tolerance, supporting the needs of a wide range of businesses and organizations globally.</p>
+
+        <h5>For more details please visit: <a href="https://aws.amazon.com/about-aws/global-infrastructure/">https://aws.amazon.com/about-aws/global-infrastructure/</a></h5>
+    </div>
+  </div>
+    <div class="qa-container">
+      <div class="question">
+        <h3>AWS Well Architected Framework</h3>
+        <i class="fa fa-angle-down"></i>
+      </div>
+      <div class="answer">
+        <P>The AWS Well-Architected Framework is a set of best practices and guidelines provided by Amazon Web Services (AWS) to help you design and build cloud-based applications and systems in a secure, reliable, and efficient manner.
+
+          Think of it as a blueprint or a checklist that helps you ensure your applications are well-designed and follow industry-leading standards. It covers various aspects of architecture, including performance, security, cost optimization, reliability, and operational excellence.
+          
+          Let's break down the 6 pillars of the AWS Well-Architected Framework:
+          
+              Security: This pillar focuses on protecting your systems and data from unauthorized access and ensuring data privacy. It includes practices such as implementing strong access controls, encryption, and monitoring for security incidents.
+              Reliability: This pillar emphasizes the importance of building systems that can withstand failures and quickly recover from them. It involves using techniques like redundancy, fault tolerance, and automated backups to minimize downtime and ensure continuous availability.
+              Performance Efficiency: This pillar is about optimizing the performance of your applications and systems to deliver the best user experience. It includes strategies like load balancing, caching, and efficient resource utilization to maximize speed and responsiveness.
+              Cost Optimization: This pillar helps you optimize your cloud resources and minimize unnecessary expenses. It involves monitoring and controlling costs, leveraging cost-effective services, and scaling resources based on demand to achieve cost-efficiency.
+              Operational Excellence: This pillar focuses on streamlining operations and improving efficiency in managing and running your systems. It covers areas such as automation, continuous improvement, and well-defined operational processes to enhance agility and reduce manual work.
+              Sustainability: This pillar describes how adding sustainability to the list of your business requirements can result in more cost-effective solutions. Focusing on getting more value from the resources you use and using fewer of them directly translates to cost savings on AWS as you pay only for what you use.
+          
+          By following the AWS Well-Architected Framework, you can ensure that your applications and systems are designed to be secure, reliable, performant, cost-effective, and easily manageable. It provides you with a structured approach to building and maintaining high-quality cloud-based solutions.</P>
+         <h5>For more details please visit: <a href="https://aws.amazon.com/architecture/well-architected/">https://aws.amazon.com/architecture/well-architected/</a></h5> 
+         </div>
+      </div>
+                    
+
+      <script>
+        // Get all the question containers
+        var questionContainers = document.getElementsByClassName('question');
+        // Add click event listener to each question container
+        for (var i = 0; i < questionContainers.length; i++) {
+          questionContainers[i].addEventListener('click', function () {
+            // Toggle the class 'show' on the corresponding answer
+            var answer = this.nextElementSibling;
+            answer.classList.toggle('show');
+          });
+        }
+      </script>
+
+</body>
+
+</html>

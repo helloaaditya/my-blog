@@ -1,0 +1,49 @@
+.answer {
+    display: none;
+  }
+  
+  .answer.show {
+    display: block;
+  }
+  
+  .qa-container {
+    border: 1px solid #ccc;
+    margin: 1rem;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size:.95em;
+    color: black;
+    background: white;
+  }
+  
+  .question h3 {
+    margin: 0;
+  }
+  
+  .answer {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .answer p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  
+  .question.active .fa-angle-down {
+    transform: rotate(180deg);
+  }
+  
+  .fa-angle-down {
+    transition: transform 0.3s ease;
+  }
+  
