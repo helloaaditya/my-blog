@@ -7,25 +7,39 @@
   <title>Resources</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
   <link rel="stylesheet" href="resources.css">
 </head>
 
 <body>
   <script src="index.js"></script>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="pic.png" alt="Logo"
-          height="50px" width="50px">
-      </div>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <section class="navigation">
+    <div class="nav-container">
+        <div class="brand">
+            <a href="index.html">
+              <img src="pic.png" width="60px" height="60px">
+            </a>
+        </div>
+        <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="resources.html">Resources</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
 
   <div class="qa-container">
     <div class="question">

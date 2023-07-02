@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My-Blog</title>
-        <link rel="stylesheet" href="style.css">
-        <link REL="stylesheet" href="blog.css">
+    <title>My-Blog</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link REL="stylesheet" href="blog.css">
 </head>
+
 <body>
-<script src="index.js"></script>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="pic.png" alt="Logo"
-                    height="50px" width="50px">
+    <script src="index.js"></script>
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html">
+                    <img src="pic.png" width="60px" height="60px">
+                </a>
             </div>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="resources.html">Resources</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
     <section>
         <div id="recent-blog">
             <div class="blog">
@@ -32,8 +48,14 @@
                 </div>
                 <div class="blog-content">
                     <h3>Secure Connectivity from Public to Private: Introducing EC2 Instance Connect Endpoint</h3>
-                    <p>We launched Amazon EC2 Instance Connect (EIC) Endpoint, a new feature that allows you to connect securely to your instances and other VPC resources from the Internet. With EIC Endpoint, you no longer need an IGW in your VPC, a public IP address on your resource, a bastion host, or any agent to connect to your resources. EIC Endpoint combines identity-based and network-based access controls, providing the isolation, control, and logging needed to meet your organization’s security requirements.</p>
-                    <a href="https://aws.amazon.com/blogs/compute/secure-connectivity-from-public-to-private-introducing-ec2-instance-connect-endpoint-june-13-2023/" class="read-more">Read More</a>
+                    <p>We launched Amazon EC2 Instance Connect (EIC) Endpoint, a new feature that allows you to connect
+                        securely to your instances and other VPC resources from the Internet. With EIC Endpoint, you no
+                        longer need an IGW in your VPC, a public IP address on your resource, a bastion host, or any
+                        agent to connect to your resources. EIC Endpoint combines identity-based and network-based
+                        access controls, providing the isolation, control, and logging needed to meet your
+                        organization’s security requirements.</p>
+                    <a href="https://aws.amazon.com/blogs/compute/secure-connectivity-from-public-to-private-introducing-ec2-instance-connect-endpoint-june-13-2023/"
+                        class="read-more">Read More</a>
                     <h5>#Architecture</h5>
                 </div>
             </div>
@@ -43,13 +65,20 @@
                         alt="Blog Image">
                 </div>
                 <div class="blog-content">
-                    <h3>Scale your workforce access management with AWS IAM Identity Center (previously known as AWS SSO)</h3>
+                    <h3>Scale your workforce access management with AWS IAM Identity Center (previously known as AWS
+                        SSO)</h3>
                     <p>AWS Single Sign-On (AWS SSO) is now AWS IAM Identity Center.
 
-                        Amazon Web Services (AWS) is changing the name to highlight the service’s foundation in AWS Identity and Access Management (IAM), to better reflect its full set of capabilities, and to reinforce its recommended role as the central place to manage access across AWS accounts and applications.
-                        
-                        Although the technical capabilities of the service haven’t changed with this announcement, we want to take the opportunity to walk through some of the important features that drive our recommendation to consider IAM Identity Center your front door into AWS.</p>
-                    <a href="https://aws.amazon.com/blogs/security/scale-your-workforce-access-management-with-aws-iam-identity-center-previously-known-as-aws-sso/?trk=global_employee_advocacy&sc_channel=sm&advocacy_source=everyonesocial&es_id=bde2696a29" class="read-more">Read More</a>
+                        Amazon Web Services (AWS) is changing the name to highlight the service’s foundation in AWS
+                        Identity and Access Management (IAM), to better reflect its full set of capabilities, and to
+                        reinforce its recommended role as the central place to manage access across AWS accounts and
+                        applications.
+
+                        Although the technical capabilities of the service haven’t changed with this announcement, we
+                        want to take the opportunity to walk through some of the important features that drive our
+                        recommendation to consider IAM Identity Center your front door into AWS.</p>
+                    <a href="https://aws.amazon.com/blogs/security/scale-your-workforce-access-management-with-aws-iam-identity-center-previously-known-as-aws-sso/?trk=global_employee_advocacy&sc_channel=sm&advocacy_source=everyonesocial&es_id=bde2696a29"
+                        class="read-more">Read More</a>
                     <h5>#Architecture</h5>
                 </div>
             </div>
@@ -60,10 +89,14 @@
                 </div>
                 <div class="blog-content">
                     <h3>How to use AWS Config and CloudTrail to find who made changes to a resource</h3>
-                    <p>In this blog post, we propose a sample solution to strengthen your detection and response to the root cause of the AWS Config resource Configuration Item (CI) change.
+                    <p>In this blog post, we propose a sample solution to strengthen your detection and response to the
+                        root cause of the AWS Config resource Configuration Item (CI) change.
 
-                        Through the sample solution, you will learn how to programmatically lookup events related to CI changes in AWS CloudTrail, extract information such as the user principal who made the change from the event, and send the information to an AWS SNS topic as a remedation.</p>
-                    <a href="https://aws.amazon.com/blogs/mt/how-to-use-aws-config-and-cloudtrail-to-find-who-made-changes-to-a-resource/?trk=global_employee_advocacy&sc_channel=sm&advocacy_source=everyonesocial&es_id=a6ec701915" class="read-more">Read More</a>
+                        Through the sample solution, you will learn how to programmatically lookup events related to CI
+                        changes in AWS CloudTrail, extract information such as the user principal who made the change
+                        from the event, and send the information to an AWS SNS topic as a remedation.</p>
+                    <a href="https://aws.amazon.com/blogs/mt/how-to-use-aws-config-and-cloudtrail-to-find-who-made-changes-to-a-resource/?trk=global_employee_advocacy&sc_channel=sm&advocacy_source=everyonesocial&es_id=a6ec701915"
+                        class="read-more">Read More</a>
                     <h5>#Architecture</h5>
                 </div>
             </div>
@@ -75,12 +108,17 @@
                 </div>
                 <div class="blog-content">
                     <h3>Adding approval notifications to EC2 Image Builder before sharing AMIs</h3>
-                       <P>In this post, we explain how to enable approval notifications for an Image Builder pipeline before AMIs are shared to other accounts.
+                    <P>In this post, we explain how to enable approval notifications for an Image Builder pipeline
+                        before AMIs are shared to other accounts.
 
-                        This solution can be extended to share to more than one AWS account or even to an AWS organization. With this solution, you will be notified when new golden images are created, allowing you to verify the accuracy of their configuration before sharing them to for wider use.
-                        
-                        This reduces the possibility of sharing AMIs with misconfigurations that the written tests may not have identified.</p>
-                    <a href="https://aws.amazon.com/blogs/compute/adding-approval-notifications-to-ec2-image-builder-before-sharing-amis-2/?trk=global_employee_advocacy&sc_channel=sm&advocacy_source=everyonesocial&es_id=46f4cc467e" class="read-more">Read More</a>
+                        This solution can be extended to share to more than one AWS account or even to an AWS
+                        organization. With this solution, you will be notified when new golden images are created,
+                        allowing you to verify the accuracy of their configuration before sharing them to for wider use.
+
+                        This reduces the possibility of sharing AMIs with misconfigurations that the written tests may
+                        not have identified.</p>
+                    <a href="https://aws.amazon.com/blogs/compute/adding-approval-notifications-to-ec2-image-builder-before-sharing-amis-2/?trk=global_employee_advocacy&sc_channel=sm&advocacy_source=everyonesocial&es_id=46f4cc467e"
+                        class="read-more">Read More</a>
                     <h5>#Architecture</h5>
                 </div>
             </div>

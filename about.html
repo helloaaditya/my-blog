@@ -5,24 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About| Aditya Kumar Prajapati</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="pic.png" alt="Logo" height="50px" width="50px">
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html">
+                    <img src="pic.png" width="60px" height="60px">
+                </a>
             </div>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="resources.html">Resources</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
     <section>
         <div class="about">
             <h2>About Me</h2>
